@@ -23,7 +23,9 @@ task :update_rules do
     end
 
     File.open(File.dirname(__FILE__) + '/lib/iban-tools/rules.yml', 'w') do |file|
-      file.write(rules.to_yaml.gsub("\\\\", "\\"))
+      rules_string = rules.to_yaml.gsub("\\\\", "\\")
+      rules_string = rules_string.gsub("\"", "'")
+      file.write(rules_string)
     end
   end
 end

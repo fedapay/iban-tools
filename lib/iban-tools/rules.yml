@@ -25,7 +25,7 @@ BE:
   bban_pattern: '\d{3}\d{7}\d{2}'
 BJ:
   length: 28
-  bban_pattern: '[A-Z]{1}[0-9]{23}'
+  bban_pattern: '[A-Z]{2}[0-9]{22}'
 BA:
   length: 20
   bban_pattern: '\d{3}\d{3}\d{8}\d{2}'
@@ -70,7 +70,7 @@ CR:
   bban_pattern: '\d{4}\d{14}'
 CI:
   length: 28
-  bban_pattern: '[A-Z]{1}[0-9]{23}'
+  bban_pattern: '[A-Z]{2}[0-9]{22}'
 HR:
   length: 21
   bban_pattern: '\d{7}\d{10}'
